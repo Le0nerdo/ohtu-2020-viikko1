@@ -9,6 +9,13 @@ public class Main {
         Varasto mehua = new Varasto(100.0);
         Varasto olutta = new Varasto(100.0, 20.2);
 
+        eka(mehua, olutta);
+        toka(mehua, olutta);
+        kolmas(mehua, olutta);
+        neljas(mehua, olutta);
+    }
+
+    private static void eka(Varasto mehua, Varasto olutta) {
         System.out.println("Luonnin jälkeen:");
         System.out.println("Mehuvarasto: " + mehua);
         System.out.println("Olutvarasto: " + olutta);
@@ -22,6 +29,9 @@ public class Main {
         System.out.println("Lisätään 50.7");
         mehua.lisaaVarastoon(50.7);
         System.out.println("Mehuvarasto: " + mehua);
+    }
+
+    private static void toka(Varasto mehua, Varasto olutta) {
         System.out.println("Otetaan 3.14");
         mehua.otaVarastosta(3.14);
         System.out.println("Mehuvarasto: " + mehua);
@@ -34,7 +44,9 @@ public class Main {
         System.out.println("new Varasto(100.0, -50.7)");
         huono = new Varasto(100.0, -50.7);
         System.out.println(huono);
+    }
 
+    private static void kolmas(Varasto mehua, Varasto olutta) {
         System.out.println("Olutvarasto: " + olutta);
         System.out.println("olutta.lisaaVarastoon(1000.0)");
         olutta.lisaaVarastoon(1000.0);
@@ -47,6 +59,9 @@ public class Main {
 
         System.out.println("Olutvarasto: " + olutta);
         System.out.println("olutta.otaVarastosta(1000.0)");
+    }
+
+    private static void neljas(Varasto mehua, Varasto olutta) {
         double saatiin = olutta.otaVarastosta(1000.0);
         System.out.println("saatiin " + saatiin);
         System.out.println("Olutvarasto: " + olutta);
